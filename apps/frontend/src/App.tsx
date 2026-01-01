@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from 'react-hot-toast'
 import LandingPage from './pages/LandingPage/LandingPage';
+import  Login  from './pages/Auth/Login';
+import SignUp from './pages/Auth/SignUp'
 import { ProtectedRoute } from "./route/ProtectedRoute";
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
-        <Route path="/signup" element={<div>landing page</div>}/>
-        <Route path="/login" element={<div>landing page</div>}/>
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/find-jobs" element={<div>job seeker dashboard</div>}/>
         <Route path="/job:jobid" element={<div>job details</div>}/>
         <Route path="/saved-jobs" element={<div>saved jobs</div>}/>

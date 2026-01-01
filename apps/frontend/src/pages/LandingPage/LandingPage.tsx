@@ -1,4 +1,6 @@
+import Analytic from './Analytic';
 import Feature from './Feature';
+import Footer from './Footer';
 import Header from './Header';
 import Hero from './Hero';
 
@@ -8,6 +10,8 @@ export default function LandingPage() {
       <Header />
       <Hero />
       <Feature/>
+      <Analytic/>
+      <Footer/>
     </div>
   );
 }
