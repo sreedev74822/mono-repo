@@ -1,0 +1,16 @@
+{
+  "name": "jobsearch(clone)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:all": "concurrently -n BACKEND,FRONTEND -c green,cyan \"pnpm --filter backend run start:dev\" \"pnpm --filter frontend run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
